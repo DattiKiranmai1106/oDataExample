@@ -1,0 +1,15 @@
+<core:FragmentDefinition
+	xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+>
+	<Dialog
+		title="Categories Details">
+		<Label text="ID"/>
+        <Input id="inputId4" editable="false"/>
+		<Label text="Name"/>
+        <Input id="inputId3"/>
+     <Button text="Save" press="onPressSave3"></Button>
+    <Button text="Close" press="onPressClose3"></Button>
+	</Dialog>
+</core:FragmentDefinition>

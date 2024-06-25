@@ -1,0 +1,20 @@
+<core:FragmentDefinition
+	xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+>
+	<Dialog
+		title="Pro Details">
+    <Label text="Name"/>
+    <Input id="upFragName" />
+    <Label text="Description"/>
+    <Input id="upFragDesc" />
+    <Label text="Price"/>
+    <Input id="upFragPrice" />
+    <Label text="Date"/>
+    <Input id="upFragDate" type="Date" />
+    <Label text="Rating"/>
+    <Input id="upFragRat" />
+    <Button text="Save" press="onPressSaveUpdateview2"></Button>
+	</Dialog>
+</core:FragmentDefinition>

@@ -1,0 +1,12 @@
+<core:FragmentDefinition
+	xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+>
+	<Dialog
+		title="Categories Details">
+    <Label text="Name"/>
+    <Input id="upFragId" />
+    <Button text="Save" press="onPressSaveUpdate"></Button>
+	</Dialog>
+</core:FragmentDefinition>

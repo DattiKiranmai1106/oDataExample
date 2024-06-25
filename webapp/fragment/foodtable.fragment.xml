@@ -1,0 +1,47 @@
+<core:FragmentDefinition
+	xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+>
+	<Dialog
+		title="Suppliers Details">
+        <!-- <List id="listId1"
+		items="{/Suppliers}"
+		headerText="Suppliers" >
+       <CustomListItem id="objectListItemId1" type="Navigation" press="onPressList"  >
+			<HBox >
+                <VBox  class="vboxClass">
+					<Text text="{Name}"></Text>
+                    <Text text="{Address}"></Text>
+                </VBox>
+			</HBox>  
+		</CustomListItem>
+        </List> -->
+         <f:SimpleForm
+			editable="true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="3"
+			labelSpanL="3"
+			labelSpanM="3"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="4"
+			emptySpanL="4"
+			emptySpanM="4"
+			emptySpanS="0"
+			columnsXL="1"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:content>
+				<Label text=" Name" />
+				<Text id="idSNo" text="{oJsonModel>/Name}" />
+				<Label text="Address" />
+				<Text id="idDegree" text="Street: {oJsonModel>/Address/Street} City: {oJsonModel>/Address/City} State: {oJsonModel>/Address/State} ZipCode: {oJsonModel>/Address/ZipCode} Country:{oJsonModel>/Address/Country}"/>
+				
+			</f:content>
+		</f:SimpleForm>
+        <Button text="Close" press="onPressSave"></Button>
+	</Dialog>
+</core:FragmentDefinition>
+

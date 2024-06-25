@@ -1,0 +1,24 @@
+<core:FragmentDefinition
+	xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+>
+	<Dialog
+		title="Products Details">
+    <Table items="{path:'modelData1>/'}" >
+    <columns>
+    <Column><Text text="Product ID" /></Column>
+    <Column><Text text="Product Name"/></Column>
+    </columns>
+    <items>
+    <ColumnListItem >
+    <cells>
+    <Text text="{modelData1>ID}"/>
+    <Text text="{modelData1>Name}"/>
+    </cells>
+    </ColumnListItem>
+    </items>
+    </Table>
+    <Button text="Close" press="onPressClose"></Button>
+	</Dialog>
+</core:FragmentDefinition>

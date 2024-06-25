@@ -1,0 +1,30 @@
+<mvc:View xmlns:layout="sap.ui.layout" xmlns:cards="sap.f.cards" xmlns:form="sap.ui.layout.form" controllerName="com.sap.kt.ods.odataexample.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" 	xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+    <Page id="page" title="{i18n>title}">
+        <content >
+        <Toolbar id="TB1" class="TBClass1">
+			<Title text="KGF Foods and Electronics" class="tit1" />          	
+        </Toolbar>
+        <Input id="inputId" width="300px"></Input>
+        <Button text="Ok1" press="onHandlePressOk"></Button>
+        <Input id="inputId1" width="300px"></Input>
+        <Button text="Ok2" press="onHandlePressOk1"></Button>
+        <Button text="ADD PRODUCTS" press="onHandlePressproduct" class="butAddProduct"></Button>
+        <Button text="ADD CAT" press="onPressCat" class="butAddcat"></Button>
+        <List id="list" class="listClass" headerText="Categories"  items="{path: '/Categories'}" mode="Delete" delete="onPressDeleteview1" >
+		<CustomListItem type="Navigation" press="onPressList"  >
+			<HBox >
+				<VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom"  >
+					<Text text="{Name}"></Text>
+                    <!-- <Text text="{ID}"></Text> -->
+                    <Label text="{ID}"/>
+                    <Button text="Get Count" press="onHandlePressCount"></Button>
+                    <Button icon="sap-icon://edit" press="OnPressUpdateView1"/>
+				</VBox>
+			</HBox>
+		</CustomListItem>
+	</List>
+    </content>
+    </Page>
+</mvc:View>

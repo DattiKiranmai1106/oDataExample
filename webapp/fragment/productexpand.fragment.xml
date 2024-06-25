@@ -1,0 +1,51 @@
+<core:FragmentDefinition
+	xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:core="sap.ui.core"
+>
+	<Dialog
+		title="Products Details">
+        <VBox class="vBoxfrag" >
+        <Label text="ID"></Label>
+        <Input id="inputId6" width="200px" editable="false"></Input>
+        <Label text="Categorie Name"/>
+        <Input id="inputId5" width="200px"></Input>
+        <Button text="ADD" class="butProductFrag" width="100px" press="onPressADDProductFrag"></Button></VBox>
+        <Table class="tableProduFrag" items="{path:'oModelDataPro>/'}" >
+        <columns>
+        <Column ><Text text="ID"></Text></Column>
+        <Column ><Text text="Name"></Text></Column>
+        <Column ><Text text="Description"></Text></Column>
+        <Column ><Text text="Price"></Text></Column>
+        <Column ><Text text="ReleaseDate"></Text></Column>
+        <Column ><Text text="Rating"></Text></Column>
+        <Column ><Text text="SUP ID"></Text></Column>
+        <Column ><Text text="Name"></Text></Column>
+        <Column ><Text text="Address"></Text></Column>
+        </columns>
+        <items>
+        <ColumnListItem >
+        <cells><Input id="inputFragId"  value="{oModelDataPro>ID}"/></cells>
+        <cells><Input id="inputFragId1"  value="{oModelDataPro>Name}"/></cells>
+        <cells><Input id="inputFragId2" value="{oModelDataPro>Description}" /></cells>
+        <cells><Input id="inputFragId3" value="{oModelDataPro>Price}" /></cells>
+        <cells><Input id="inputFragId4" value="{oModelDataPro>ReleaseDate}" type="Date"/></cells>
+        <cells><Input id="inputFragId5" value="{oModelDataPro>Rating}"/></cells>
+        <cells><Input id="inputFragId9" value="{oModelDataPro>Supplier/ID}"/></cells>
+        <cells><Input id="inputFragId7" value="{oModelDataPro>Supplier/Name}"/></cells>
+        <cells>
+        <VBox>
+        <Input id="inputFragId8" value="{oModelDataPro>Supplier/Address/Street}"/>
+        <Input id="inputFragId10" value="{oModelDataPro>Supplier/Address/City}"/>
+        <Input id="inputFragId11" value="{oModelDataPro>Supplier/Address/State}"/>
+        <Input id="inputFragId12" value="{oModelDataPro>Supplier/Address/ZipCode}"/>
+        <Input id="inputFragId13" value="{oModelDataPro>Supplier/Address/Country}"/>
+        </VBox>
+        </cells>
+        </ColumnListItem>
+        </items>
+        </Table>
+     <Button text="Save" press="onPressSave4" class="but2productfrag" width="100px"></Button>
+      <Button text="Close" press="onPressClose4" class="but3productfrag"  width="100px"></Button>
+	</Dialog>
+</core:FragmentDefinition>

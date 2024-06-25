@@ -1,0 +1,39 @@
+/* Enter your custom styles here */
+.tit1{
+    margin-top: 20px;
+}
+.vboxClass{
+    padding: 20px;
+}
+
+.butProductFrag{
+    margin-left: 1000px;
+}
+
+.tableProduFrag th, .tableProduFrag td{
+    border: 1px solid black;
+}
+
+.tableProduFrag{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.but2productfrag{
+    margin-left: 80%;
+}
+
+.butAddProduct{
+    margin-left: 100px;
+}
+
+.butAddcat{
+    margin-left: 10px;
+}
+.but3productfrag{
+    margin-left: 10px;
+}
+
+.vBoxfrag{
+    margin-left: 20px;
+}
